@@ -20,5 +20,8 @@ function validate()
         passDiv.style.display = 'none';
 
     }
+    else{
+        alert('Invalid Password');
+    }
     
 }
