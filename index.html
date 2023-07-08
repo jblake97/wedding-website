@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cathy + Jordan</title>
-        <link href="styles.css" rel="stylesheet">
+        <link href="static/styles.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-        <link href="quiz-source-code/quiz-style.css" rel="stylesheet">
-        <script src="quiz-source-code/quiz-script.js"></script>
+        <link href="static/quiz-source-code/quiz-style.css" rel="stylesheet">
+        <script src="static/quiz-source-code/quiz-script.js"></script>
 
-        <link href="image-gallery.css" rel="stylesheet">
+        <link href="static/image-gallery.css" rel="stylesheet">
        
     </head>
     
@@ -21,37 +21,37 @@
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/carousel-images/cropped/1.jpg" class="d-block w-100" alt="1">
+                    <img src="static/images/carousel-images/cropped/1.jpg" class="d-block w-100" alt="1">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/2.jpg" class="d-block w-100" alt="2">
+                    <img src="static/images/carousel-images/cropped/2.jpg" class="d-block w-100" alt="2">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/3.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/3.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/4.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/4.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/5.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/5.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/6.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/6.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/7.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/7.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/8.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/8.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/9.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/9.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/10.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/10.jpg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/carousel-images/cropped/11.jpg" class="d-block w-100" alt="3">
+                    <img src="static/images/carousel-images/cropped/11.jpg" class="d-block w-100" alt="3">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -73,6 +73,8 @@
                 <br>
                 <h2>Terrain in Glen Mills, PA</h2>
                 <br><br>
+                <a href="{% url 'rsvp' %}">Click here to RSVP</a>
+                <br><br>
         </div>
 
       <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -83,8 +85,12 @@
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              When Cathy first moved to Philadelphia for graduate school, she joined several Facebook pages to meet new people and explore the new city. Jordan courageously commented on one of Cathy's posts, and they quickly realized they shared common interests and values. They agreed to meet at Mission Taqueria in Center City and ended up talking for five hours. Because Cathy didn't want the night to end, she agreed to the 30 minute walk home instead of hopping on the loud train. The rest is history :)
+            <div class="accordion-body story">
+              <p>When Cathy first moved to Philadelphia for graduate school, she joined several Facebook pages to meet new people and explore the new city. 
+                Jordan courageously commented on one of Cathy's posts, and they quickly realized they shared common interests and values. 
+                They agreed to meet at Mission Taqueria in Center City and ended up talking for five hours. 
+                Because Cathy didn't want the night to end, she agreed to the 30 minute walk home instead of hopping on the loud train. 
+                The rest is history :)</p>
             </div>
           </div>
         </div>
@@ -114,7 +120,7 @@
                 <dd>Sundubu-Jjigae OR anything Cathy's mother makes when they visit!</dd>  
                 <br>
                 <dt><strong>Who outlifts who in the gym?</strong></dt>
-                <dd>Cathy certainly flexes on Jordan with her strong legs, but he makes it up through all upper body work.</dd>
+                <dd>Cathy's got the stronger legs while Jordan's upper body compliments it perfectly.</dd>
             </dl>
             </div>
           </div>
@@ -131,16 +137,29 @@
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>The below applies to anyone who will be attending our wedding. Bridal party and family schedules will be different!</p>
-                <uL style="margin-left:auto";>
-                    <li>4:00 to 4:30 PM - Guest arrival time</li>
-                    <li>4:30 to 5:00 PM - Outdoor wedding ceremony</li>
-                    <li>5:00 to 6:00 PM - Ceremony concludes followed by cocktail hour</li>
-                    <li>6:00 to 6:45 PM - Newlywed's first dance and bridal party speeches</li>
-                    <li>6:45 to 8:00 PM - Seated dinner service with music provided by DJ</li>
-                    <li>8:00 to 9:00 PM - After dinner snacks served and partying</li>
-                    <li>9:00 to 9:30 PM - Goodbye's and cleanup</li>
-                </uL>
+                <h6>The below applies to any and all who will be attending our wedding.</h6>
+                <dl class="row" style="margin-left: auto; margin-top: 5%;">
+                  <dt class="col-sm-3">4:00 to 4:30 PM</dt>
+                  <dd class="col-sm-9">Guest arrival time</dd>
+                
+                  <dt class="col-sm-3">4:30 to 5:00 PM</dt>
+                  <dd class="col-sm-9">Outdoor wedding ceremony</dd>
+
+                  <dt class="col-sm-3">5:00 to 6:00 PM</dt>
+                  <dd class="col-sm-9">Ceremony concludes followed by cocktail hour</dd>
+
+                  <dt class="col-sm-3">6:00 to 6:45 PM</dt>
+                  <dd class="col-sm-9">Newlywed's first dance and bridal party speeches</dd>  
+                  
+                  <dt class="col-sm-3">6:45 to 8:00 PM</dt>
+                  <dd class="col-sm-9">Seated dinner service with music provided by DJ</dd>
+                  
+                  <dt class="col-sm-3">8:00 to 9:00 PM</dt>
+                  <dd class="col-sm-9">After dinner snacks served and partying</dd>                 
+                  
+                  <dt class="col-sm-3">9:00 to 9:30 PM</dt>
+                  <dd class="col-sm-9">Goodbye's and cleanup</dd>                              
+                </dl>
               </div>
             </div>
           </div>
@@ -156,12 +175,12 @@
             </h2>
             <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                  <ul>
-                    <li>Overall dress code is Semi-Formal</li>
-                    <li>The color scheme is pastel colors to match the season</li>
-                    <li>Women can opt to wear a suit, dress or other formal attire</li>
-                    <li>Men can opt for a casual blazer fit or a full suit/tuxedo if preferred</li>
-                </ul>
+                <dl>
+                  <dt><strong>Overall</strong></dt> <dd>Dress code is Semi-Formal</dd>
+                  <dt><strong>Color Scheme</strong></dt> <dd>Pastel colors to match the season, not too light</dd>
+                  <dt><strong>Men </Menu></strong></dt> <dd>Blazer, tie or no tie, suit or tux</dd>
+                  <dt><strong>Women</strong></dt> <dd>Suit, dress, or other semi-formal attire</dd>
+                  <dt><strong>Absolutely</strong></dt><dd>No White!</dd>
               </div>
             </div>
           </div>
@@ -177,18 +196,18 @@
             </h2>
             <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p><strong>Location</strong> - Terrain is located in Glen Mills, PA. This is roughly 45 minutes from Manayunk and Ambler. From Ellicott City, Maryland, it is approximately 2 hours. For those traveling from Maryland to celebrate with us, please see below for available hotels in the area.</p>
-                <p><strong>Parking</strong> - On site and free. No reason to stress on transporation to Terrain!</p>
-                <p><strong>Shopping</strong> - Aside from hosting weddings, Terrain is a plant nursery and cafe. If you have time the following day we recommend both the cafe and shop!</p>
-                <p><strong>Hotel Options:</strong>
-                    <ul>
-                        <li>All hotel options are within 1 mile of venue location!</li>
-                        <li><a href="https://www.hilton.com/en/hotels/phlcfht-home2-suites-glen-mills-chadds-ford/?SEO_id=GMB-AMER-HT-PHLCFHT&y_source=1_MTQ3MjI5MzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D">Home2 Suites by Hilton</a> - Rooms starting at $160 per night</li>
-                        <li><a href="https://www.marriott.com/en-us/hotels/phlvl-residence-inn-philadelphia-glen-mills-concordville/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">Residence Inn by Marriott</a> - Rooms starting at $200 per night</li>
-                        <li><a href="https://www.bestwestern.com/en_US/book/glen-mills/hotel-rooms/best-western-plus-concordville-hotel/propertyCode.39066.html">Best Western</a> - Rooms starting at $125 per night</li>
-                        <li><a href="https://www.ihg.com/staybridge/hotels/us/en/glen-mills/phlfd/hoteldetail?cm_mmc=GoogleMaps-_-SB-_-US-_-PHLFD">Staybridge Suties by IHG Hotel</a> - Rooms starting at $150 per night</li>
-                    </ul>
-                </p>
+                <dt><strong>Location</strong></dt><dd>Terrain is located in Glen Mills, PA. This is roughly 45 minutes from Manayunk and Ambler.
+                                                    <br>From Ellicott City, Maryland, it is approximately 2 hours.
+                                                    <br>For those traveling from Maryland, please see below for available hotels in the area.</dd>
+                <dt><strong>Parking</strong></dt><dd>On site and free. No reason to stress on transporation to Terrain!</dd>
+                <dt><strong>Shopping</strong></dt><dd>Aside from hosting weddings, Terrain is a plant nursery and cafe. If you have time the following day we recommend both the cafe and shop!</dd>
+                
+                <h4 style="text-decoration: underline; margin-top: 5%;"><strong>Hotel Options:</strong></h4>
+                  <h6>All hotel options are within 1 mile of venue location!</h6>
+                  <dt><a href="https://www.hilton.com/en/hotels/phlcfht-home2-suites-glen-mills-chadds-ford/?SEO_id=GMB-AMER-HT-PHLCFHT&y_source=1_MTQ3MjI5MzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D">Home2 Suites by Hilton</a></dt><dd>Rooms starting at $160 per night</dd>
+                  <dt><a href="https://www.marriott.com/en-us/hotels/phlvl-residence-inn-philadelphia-glen-mills-concordville/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">Residence Inn by Marriott</a></dt><dd>Rooms starting at $200 per night</dd>
+                  <dt><a href="https://www.bestwestern.com/en_US/book/glen-mills/hotel-rooms/best-western-plus-concordville-hotel/propertyCode.39066.html">Best Western</a></dt><dd>Rooms starting at $125 per night</dd>
+                  <dt><a href="https://www.ihg.com/staybridge/hotels/us/en/glen-mills/phlfd/hoteldetail?cm_mmc=GoogleMaps-_-SB-_-US-_-PHLFD">Staybridge Suties by IHG Hotel</a></dt><dd>Rooms starting at $150 per night</dd>
               </div>
             </div>
           </div>
@@ -204,11 +223,10 @@
             </h2>
             <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <p>Please see any of the links below to places we have registered! We thank you so much in advance!</p>
-                <ul>
-                  <li><a href="https://www.crateandbarrel.com/">Crate & Barrel</a></li>
-                  <li><a href="https://www.amazon.com/">Amazon</a></li>
-                </ul>
+                <h6>Please see below to places we have registered!
+                    <br>We thank you so much in advance!</h6><br>
+                    <dt><a href="https://www.crateandbarrel.com/">Crate & Barrel</a></dt>
+                    <dt><a href="https://www.amazon.com/">Amazon</a></dt>
               </div>
             </div>
           </div>
@@ -227,8 +245,8 @@
                 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/angela.jpg">
-                      <img src="images/bridal-party/angela.jpg" alt="Angela Ji" >
+                    <a target="_blank" href="static/images/bridal-party/angela.jpg">
+                      <img src="static/images/bridal-party/angela.jpg" alt="Angela Ji" >
                     </a>
                     <div class="desc"><p><strong>Angela Ji</strong> - Bridesmaid</p>
                     </div>
@@ -237,8 +255,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/Cristy.jpg">
-                      <img src="images/bridal-party/Cristy.jpg" alt="Cristy Gao" >
+                    <a target="_blank" href="static/images/bridal-party/Cristy.jpg">
+                      <img src="static/images/bridal-party/Cristy.jpg" alt="Cristy Gao" >
                     </a>
                     <div class="desc"><p><strong>Cristy Gao</strong> - Bridesmaid</p>
                     </div>
@@ -247,8 +265,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/Hayan.jpg">
-                      <img src="images/bridal-party/hayan.jpg" alt="Hayan Kang" >
+                    <a target="_blank" href="static/images/bridal-party/Hayan.jpg">
+                      <img src="static/images/bridal-party/hayan.jpg" alt="Hayan Kang" >
                     </a>
                     <div class="desc"><p><strong>Hayan Kang</strong> - Bridesmaid</p>
                     </div>
@@ -257,8 +275,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/Eunice.jpg">
-                      <img src="images/bridal-party/Eunice.jpg" alt="Eunice Nam" >
+                    <a target="_blank" href="static/images/bridal-party/Eunice.jpg">
+                      <img src="static/images/bridal-party/Eunice.jpg" alt="Eunice Nam" >
                     </a>
                     <div class="desc"><p><strong>Eunice Nam</strong> - Maid of Honor</p>
                     </div>
@@ -267,8 +285,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/esther.jpg">
-                      <img src="images/bridal-party/esther.jpg" alt="Esther Shin" >
+                    <a target="_blank" href="static/images/bridal-party/esther.jpg">
+                      <img src="static/images/bridal-party/esther.jpg" alt="Esther Shin" >
                     </a>
                     <div class="desc"><p><strong>Esther Shin</strong> - Matrin of Honor</p>
                     </div>
@@ -279,8 +297,8 @@
                 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/jeff.jpg">
-                      <img src="images/bridal-party/jeff.jpg" alt="Jefferson Ta" >
+                    <a target="_blank" href="static/images/bridal-party/jeff.jpg">
+                      <img src="static/images/bridal-party/jeff.jpg" alt="Jefferson Ta" >
                     </a>
                     <div class="desc"><p><strong>Jefferson Ta</strong> - Groomsman</p>
                     </div>
@@ -289,8 +307,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/Max.jpg">
-                      <img src="images/bridal-party/Max.jpg" alt="Max Doffman" >
+                    <a target="_blank" href="static/images/bridal-party/Max.jpg">
+                      <img src="static/images/bridal-party/Max.jpg" alt="Max Doffman" >
                     </a>
                     <div class="desc"><p><strong>Max Doffman</strong> - Groomsman</p>
                     </div>
@@ -299,8 +317,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/shaun.jpg">
-                      <img src="images/bridal-party/shaun.jpg" alt="Shaun Sebastian">
+                    <a target="_blank" href="static/images/bridal-party/shaun.jpg">
+                      <img src="static/images/bridal-party/shaun.jpg" alt="Shaun Sebastian">
                     </a>
                     <div class="desc"><p><strong>Shaun Sebastian</strong> - Groomsman</p>
                     </div>
@@ -309,8 +327,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/Pat.jpg">
-                      <img src="images/bridal-party/Pat.jpg" alt="Patrick Serraeo">
+                    <a target="_blank" href="static/images/bridal-party/Pat.jpg">
+                      <img src="static/images/bridal-party/Pat.jpg" alt="Patrick Serraeo">
                     </a>
                     <div class="desc"><p><strong>Patrick Serraeo</strong> - Groomsman</p>
                     </div>
@@ -319,8 +337,8 @@
 
                 <div class="responsive">
                   <div class="gallery">
-                    <a target="_blank" href="images/bridal-party/Jrad.jpg">
-                      <img src="images/bridal-party/Jrad.jpg" alt="Jrad">
+                    <a target="_blank" href="static/images/bridal-party/Jrad.jpg">
+                      <img src="static/images/bridal-party/Jrad.jpg" alt="Jrad">
                     </a>
                     <div class="desc"><p><strong>Jrad</strong> - Best Man and Officiant</p>
                     </div>
@@ -337,40 +355,40 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                <h3 style="margin-left: auto;">Quiz!</h3>
+                <h3 style="margin-left: auto;">Pet Quiz</h3>
               </button>
             </h2>
             <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 <div class="wrapper">
                   <div id="quiz">
-                    <h1>Trivia quiz</h1>
+                    <h6><strong>Test your knowledge of our pets!</strong>
+                        <br>Minimum required score: 4 / 5</h6>
                     
                     <p class="questions"></p>
                     
                     <div class="answers"></div>         
                     
                     <div class="checkAnswers">
-                      <h3>Correct?</h3>
+                      <h6>Correct?</h6>
                       <div class="checker">
               
                       </div>
                     </div>
+                    
                   </div>
                 </div>  
               </div>
             </div>
           </div>
-          <br><br>
         </div>
       </div>
 
-
       <div class="mb-3" id="passDiv" style="width:75%; margin:auto; margin-top:10px; background-color: peachpuff;">
         <label for="password" class="form-label">Enter Password Below:</label>
-        <input type="password" class="form-control" id="password" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" onfocus="this.value=''" style="width: 50%; margin-left: 25%; margin-bottom: 10%;">
+        <input type="password" class="form-control" id="password" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" onfocus="this.value=''" autofocus style="width: 50%; margin-left: 25%; margin-bottom: 10%;">
         <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="validate()">Submit</button>
-
+        <p id="invalidPass" style="color: red;"></p>
       </div>
 
     </body>
@@ -381,6 +399,6 @@
         <br><br>
     </footer>
 
-    <script src="password.js"></script>
+    <script src="../static/password.js"></script>
 
 </html>
