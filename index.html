@@ -12,12 +12,16 @@
         <script src="static/quiz-source-code/quiz-script.js"></script>
 
         <link href="static/image-gallery.css" rel="stylesheet">
+
+        <link href="static/aperto-font/stylesheet.css" rel="stylesheet">
+        <link href="static/cursive-font/stylesheet.css" rel="stylesheet">
+
        
     </head>
     
-    <body style="background-color:peachpuff;">
-      <div id="websiteBody" style="display:none;">
-        <div class="carousel-container">
+    <body>
+      <div id="websiteBody" class="inviteCard" style="display:none;">
+        <div class="carousel-container" style="margin-bottom: 5%;">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -68,13 +72,12 @@
         <hr>
 
         <div class="title">
-                <h2>Sunday</h2>
-                <h2>April 28, 2024</h2>
+                <h1 style="font-family: 'la_luxesscript'; font-size:400%;">Sunday</h1>
+                <h1>April 28, 2024</h1>
                 <br>
                 <h2>Terrain in Glen Mills, PA</h2>
-                <br><br>
-                <a href="{% url 'rsvp' %}">Click here to RSVP</a>
-                <br><br>
+                
+                <a href="{% url 'rsvp' %}" style="margin-top: 3%; margin-bottom: 3%;">Click here to RSVP (BROKEN!)</a>
         </div>
 
       <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -94,7 +97,6 @@
             </div>
           </div>
         </div>
-        <br><br>
       </div>
       
       <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -125,7 +127,6 @@
             </div>
           </div>
         </div>
-        <br><br>
       </div>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -163,7 +164,6 @@
               </div>
             </div>
           </div>
-          <br><br>
         </div>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -181,10 +181,31 @@
                   <dt><strong>Men </Menu></strong></dt> <dd>Blazer, tie or no tie, suit or tux</dd>
                   <dt><strong>Women</strong></dt> <dd>Suit, dress, or other semi-formal attire</dd>
                   <dt><strong>Absolutely</strong></dt><dd>No White!</dd>
+                </dl>
               </div>
             </div>
           </div>
-          <br><br>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour2" aria-expanded="false" aria-controls="flush-collapseFour2">
+                <h3 style="margin-left: auto;">FAQ</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseFour2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <dl>
+                  <dt><strong>Will there be an open bar?</strong></dt> <dd>Yes! There will be beers, wine and select cocktails</dd>
+                  <dt><strong>Will there be dancing?</strong></dt> <dd>Following dinner there will be an opportunity to dance</dd>
+                  <dt><strong>Are kids/pets allowed? </strong></dt> <dd>No children please unless explcitly given permission. Unfortunately, no furry friends either.</dd>
+                  <dt><strong>What if it rains?</strong></dt> <dd>Terrain has an indoor space for the ceremony. Reception will not change!</dd>
+                  <dt><strong>Do we need to worry over taking our own pictures?</strong></dt> <dd>No! No need to stress during the ceremony! We have a professional photographer!</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -211,7 +232,6 @@
               </div>
             </div>
           </div>
-          <br><br>
         </div>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -230,7 +250,6 @@
               </div>
             </div>
           </div>
-          <br><br>
         </div>
 
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -310,7 +329,7 @@
                     <a target="_blank" href="static/images/bridal-party/Max.jpg">
                       <img src="static/images/bridal-party/Max.jpg" alt="Max Doffman" >
                     </a>
-                    <div class="desc"><p><strong>Max Doffman</strong> - Groomsman</p>
+                    <div class="desc"><p><strong>Max Dolfman</strong> - Groomsman</p>
                     </div>
                   </div>
                 </div>
@@ -348,10 +367,9 @@
               </div>
             </div>
           </div>
-          <br><br>
         </div>
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-bottom: 5%;">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
@@ -363,14 +381,13 @@
                 <div class="wrapper">
                   <div id="quiz">
                     <h6><strong>Test your knowledge of our pets!</strong>
-                        <br>Minimum required score: 4 / 5</h6>
                     
                     <p class="questions"></p>
                     
                     <div class="answers"></div>         
                     
                     <div class="checkAnswers">
-                      <h6>Correct?</h6>
+                      <h6 style="margin-top:2%">Correct?</h6>
                       <div class="checker">
               
                       </div>
@@ -384,16 +401,16 @@
         </div>
       </div>
 
-      <div class="mb-3" id="passDiv" style="width:75%; margin:auto; margin-top:10px; background-color: peachpuff;">
+      <div class="mb-3" id="passDiv" style="width:50%; margin:auto; margin-top:15%; background-color: transparent;">
         <label for="password" class="form-label">Enter Password Below:</label>
-        <input type="password" class="form-control" id="password" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" onfocus="this.value=''" autofocus style="width: 50%; margin-left: 25%; margin-bottom: 10%;">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="validate()">Submit</button>
-        <p id="invalidPass" style="color: red;"></p>
+        <input type="password" class="form-control" id="password" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" onfocus="this.value=''" autofocus style="width: 50%; margin-left: 25%; margin-bottom: 5%;">
+        <button class="btn btn-primary" type="button" id="button-addon1" onclick="validate()">Submit</button>
+        <p id="invalidPass" style="color: red; margin-top: 5%;"></p>
       </div>
 
     </body>
 
-    <footer style="background-color: peachpuff;">
+    <footer>
         <br><br>
         <p style="text-align:center";>Product of Ori X Buns Inc.</p>
         <br><br>

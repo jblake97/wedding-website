@@ -4,10 +4,12 @@
   padding-top: 0px;
   padding-left: 10%;
   padding-right: 10%;
+  background-color: #e2dfdf9f;
+
 }
 
 #quiz {
-  background-color: white;
+  background-color: #e2dfdf9f;
   padding-bottom: 60px;
   width: 100%;
   border-radius: 2%;
@@ -23,7 +25,7 @@
 }
 
 .questions {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 200;
   font-style: italic;
   padding: 20px;
@@ -46,7 +48,7 @@
 .answers div {
   width: 25%;
   margin: 0 auto;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-top: 2px solid rgb(0, 0, 0);
 }
 
@@ -62,7 +64,7 @@
 
 .correct, .false {
   background-color: #109D59;
-  width: 60px;
+  width: 40px;
   height: 30px;
   line-height: 30px;
   padding-left: 4px;
