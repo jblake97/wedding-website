@@ -14,9 +14,9 @@ window.onload = function () {
         
         'What is Brie\'s rap name?' : ['Young Briezy', '50 Brie', 'Fo-Briezy my Neezy', 'Biggie Brie', 0],
 
-        'Which pet is the most chatty?' : ['Latte', 'Brie', 'Nori', 'Bori', 3], 
+        'Which pet is the most talkative?' : ['Latte', 'Brie', 'Nori', 'Bori', 3], 
 
-        'Which pet is the filthiest?' : ['Latte', 'Brie', 'Nori', 'Bori', 0] 
+        'Which pet is the dirtiest?' : ['Latte', 'Brie', 'Nori', 'Bori', 0] 
       };
       
   function loadQuestion(curr) {
@@ -72,7 +72,7 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = 'Done';
+        questionArea.innerHTML = 'End of Quiz!';
         answerArea.innerHTML = '';
       }
                               
@@ -84,7 +84,7 @@ window.onload = function () {
   // Used to see if it was correct or false
   
     var createDiv = document.createElement('div'),
-        txt       = document.createTextNode(current + 1);
+        txt       = document.createTextNode('');
     
     createDiv.appendChild(txt);
     
